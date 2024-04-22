@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+
+
+
+   <div class="parent">
+   <div class="input">
+    <input type="text" id="inputField" disabled placeholder="Enter Equations">
+</div>
+        <table class="table" border="1">
+            <tr class="table1">
+                <td onclick="Value('+')">+</td>
+                <td onclick="Value('-')">-</td>
+                <td onclick="Value('*')">*</td>
+                <td onclick="Value('/')">/</td>
+            </tr>
+            <tr  class="table2">
+                <td onclick="Value(7)">7</td>
+                <td onclick="Value(8)">8</td>
+                <td onclick="Value(9)">9</td>
+                <td  onclick="Value('.')">.</td>
+       
+            </tr>
+            <tr class="table2">
+                <td onclick="Value(4)">4</td>
+                <td onclick="Value(5)">5</td>
+                <td onclick="Value(6)">6</td>
+                <td onclick="percent()">%</td>
+              
+            </tr>
+            <tr class="table2">
+                <td onclick="Value(1)">1</td>
+                <td onclick="Value(2)">2</td>
+                <td onclick="Value(3)">3</td>
+                <td rowspan="2" onclick="result()">=</td>
+
+            </tr>
+            <tr class="table3">
+                <td onclick="singleClearValue()">C</td>
+                <td onclick="Value(0)">0</td>
+                <td onclick="allClearValue()">D</td>
+            </tr>
+    </table>
+
+   </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+<script src="./app.js"></script>
+</html>
